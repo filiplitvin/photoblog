@@ -5,6 +5,40 @@
   --colorTextNavigation: #7d7d7d;
   --colorTExtHover: #03a9f4;
   /* шрифти */
-  --fontPrimary: "Playfair Display", serif;
+  --fontPrimary1: "Playfair Display", serif;
   --fontPrimary: "Ubuntu", serif;
+}
+body {
+  font-family: var(--fontPrimary1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--colorTextPrimary);
+}
+.nav-link {
+  color: var(--colorTextNavigation);
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--colorTExtHover);
+}
+.post-category {
+  font-family: var(--fontPrimary);
+  color: var(--colorTextCategory);
+  font-weight: 300;
+}
+.post-title {
+  font-size: 30px;
+}
+.gallery-button {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  border: 1px solid var(--colorTextPrimary);
+  background-color: transparent;
+  padding: 20px 50px;
+}
+.gallery-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
