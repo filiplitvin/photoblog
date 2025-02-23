@@ -22,19 +22,35 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.header {
+  padding-top: 70px;
+}
 .nav-link {
   color: var(--colorTextNavigation);
 }
 .nav-link:hover {
   color: var(--colorTExtHover);
 }
+.gallery {
+  padding-top: 90px;
+  padding-bottom: 65px;
+}
+.gallery-list {
+  margin-bottom: 94px;
+}
+.post-photo {
+  margin-bottom: 62px;
+}
 .post-category {
   font-family: var(--fontPrimary);
   color: var(--colorTextCategory);
   font-weight: 300;
+  display: inline-block;
+  margin-bottom: 32px;
 }
 .post-title {
   font-size: 30px;
+  margin-bottom: 40px;
 }
 .gallery-button {
   border: 1px solid var(--colorTextPrimary);
