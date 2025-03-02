@@ -25,6 +25,11 @@ body {
 .header {
   padding-top: 70px;
 }
+.nav-list {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
 .nav-link {
   color: var(--colorTextNavigation);
 }
@@ -37,6 +42,18 @@ body {
 }
 .gallery-list {
   margin-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 65px;
+  row-gap: 130px;
+}
+.gallery-item {
+  max-width: 420px;
+}
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .post-photo {
   margin-bottom: 62px;
