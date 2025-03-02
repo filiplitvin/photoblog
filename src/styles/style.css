@@ -73,6 +73,7 @@ body {
   border: 1px solid var(--colorTextPrimary);
   background-color: transparent;
   padding: 20px 50px;
+  /* Не вийшло розмістити по центру */
 }
 .gallery-button:hover {
   opacity: 0.8;
