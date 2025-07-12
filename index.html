@@ -155,10 +155,18 @@
               </article>
             </li>
           </ul>
-
-          <button class="gallery-button" type="button">Load more</button>
+          <button class="gallery-button btn-open" data-modal-open type="button">
+            Load more
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <h2 class="modal-content">Chat GPT вам на допомогу</h2>
+              <button class="btn-close" data-modal-close>X</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
   </body>
+  <script type="module" src="./src/js/index.js"></script>
 </html>

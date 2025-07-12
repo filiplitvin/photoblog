@@ -79,3 +79,62 @@ body {
   opacity: 0.8;
   cursor: pointer;
 }
+.backdrop {
+  position: fixed;
+  background-color: rgba(207, 197, 197, 0.3);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-150%, -50%) scale(50%);
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1c0c0;
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(100%);
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow: 0px 2px 2px 0px black;
+  transition-duration: 500ms;
+}
+.modal-content {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgba(255, 255, 255, 0.832);
+}
+.btn-close {
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff55;
+  border-radius: 50%;
+  color: black;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  box-shadow: 0px 1px 1px 0px black;
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+.btn-close:hover {
+  box-shadow: 0px 2px 2px 0px black;
+}
+.no-scroll {
+  overflow: hidden;
+}
